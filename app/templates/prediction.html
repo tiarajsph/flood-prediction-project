@@ -4,11 +4,98 @@
     <h1>Predictions</h1>
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
+
         <p>
-            {{ form.rainfall.label }}<br>
-            {{ form.rainfall(size=32) }}
+            {{ form.jan.label }}<br>
+            {{ form.jan(size=32) }}
+            {% for error in form.jan.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
         </p>
-        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p>
+            {{ form.feb.label }}<br>
+            {{ form.feb(size=32) }}
+            {% for error in form.feb.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.mar.label }}<br>
+            {{ form.mar(size=32) }}
+            {% for error in form.mar.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.apr.label }}<br>
+            {{ form.apr(size=32) }}
+            {% for error in form.apr.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.may.label }}<br>
+            {{ form.may(size=32) }}
+            {% for error in form.may.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.jun.label }}<br>
+            {{ form.jun(size=32) }}
+            {% for error in form.jun.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.jul.label }}<br>
+            {{ form.jul(size=32) }}
+            {% for error in form.jul.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.aug.label }}<br>
+            {{ form.aug(size=32) }}
+            {% for error in form.aug.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.sep.label }}<br>
+            {{ form.sep(size=32) }}
+            {% for error in form.sep.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.oct.label }}<br>
+            {{ form.oct(size=32) }}
+            {% for error in form.oct.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.nov.label }}<br>
+            {{ form.nov(size=32) }}
+            {% for error in form.nov.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.dec.label }}<br>
+            {{ form.dec(size=32) }}
+            {% for error in form.dec.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.annual_rainfall.label }}<br>
+            {{ form.annual_rainfall(size=32) }}
+            {% for error in form.annual_rainfall.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
         <p>{{ form.submit() }}</p>
     </form>
 {% endblock %}

@@ -16,7 +16,6 @@ flood_prediction_app/
 │   │   ├── base.html
 │   │   ├── index.html
 │   │   ├── prediction.html
-│   │   ├── results.html
 │   │   └── visualizations.html
 │   └── utils/
 │       ├── data_processing.py

@@ -1,6 +1,54 @@
 {% extends "base.html" %}
 
 {% block context %}
-    <h1>Welcome to Flood Prediction Model</h1>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#project-objectives">Project Objectives</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#expected-outcomes">Expected Outcomes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h1>Welcome to Flood Prediction Model</h1>
+            <p>Flooding is a significant issue that threatens urban areas, leading to extensive property damage, displacement of communities, and loss of lives. This project aims to develop an accurate and reliable flood prediction model using advanced data analysis and machine learning techniques.</p>
+            <button>Learn More</button>
+        </section>
+        <section id="project-objectives">
+            <h2>Project Objectives</h2>
+            <ul>
+                <li>To preprocess and analyze the provided flood dataset.</li>
+                <li>To identify significant factors that contribute to flooding.</li>
+                <li>To investigate patterns and trends in flood occurrences.</li>
+                <li>To create and optimize machine learning models for flood prediction.</li>
+                <li>To validate and test the prediction accuracy of the models.</li>
+                <li>To offer recommendations for flood risk reduction.</li>
+            </ul>
+        </section>
+        <section id="methodology">
+            <h2>Methodology</h2>
+            <p>The project will be conducted in the following phases:</p>
+            <ol>
+                <li>Data Collection</li>
+                <li>Data Cleaning & Preprocessing</li>
+                <li>Exploratory Data Analysis (EDA)</li>
+                <li>Model Development</li>
+                <li>Implementation</li>
+                <li>Validation and Testing</li>
+            </ol>
+        </section>
+        <section id="expected-outcomes">
+            <h2>Expected Outcomes</h2>
+            <ul>
+                <li>Detailed Assessment: A thorough review of monthly rainfall data to identify key trends and patterns associated with flood events.</li>
+                <li>Forecasting Model: Robust models that analyze both past and present rainfall data to predict future flood events, allowing for timely and precise flood alerts.</li>
+                <li>Strategic Interventions: Evidence-based recommendations and solutions aimed at reducing flood risks, encompassing enhancements in infrastructure, land-use planning, and community preparedness initiatives.</li>
+                <li>Risk Assessment and Mapping: Development of flood risk maps highlighting high-risk areas, facilitating targeted interventions and resource allocation.</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
 {% endblock %}
