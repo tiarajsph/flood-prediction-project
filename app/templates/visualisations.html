@@ -1,25 +1,26 @@
 {% extends "base.html" %}
 
 {% block context %}
-    <div>
+<div class="content">
+    <div class="card">
         <h4>Annual Rainfall over time</h4>
         <img src="{{ url_for('static', filename='images/annual_rainfall_over_time.jpg') }}" alt="Annual Rainfall over time">
     </div>
 
-    <div>
+    <div class="card">
         <h4>Distribution of Annual Rainfall</h4>
         <img src="{{ url_for('static', filename='images/distribution_of_annual_rainfall.jpg') }}" alt="Distribution of Annual Rainfall">
     </div>
 
-    <div>
+    <div class="card">
         <h4>Annual Rainfall of Every Year</h4>
         <img src="{{ url_for('static', filename='images/annual_rainfall_yearwise.jpg') }}" alt="Annual Rainfall of Every Year">
     </div>
 
-    <div>
+    <div class="card">
         <h4>Average Monthly Rainfall Trend</h4>
         <img src="{{ url_for('static', filename='images/average_monthly_rainfall_trend.jpg') }}" alt="Average Monthly Rainfall Trend">
     </div>
-
-
+</div>
 {% endblock %}
+

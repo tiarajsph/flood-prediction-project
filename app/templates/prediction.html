@@ -1,101 +1,118 @@
 {% extends "base.html" %}
 
 {% block context %}
+<div class="form-container">
     <h1>Predictions</h1>
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
 
-        <p>
-            {{ form.jan.label }}<br>
-            {{ form.jan(size=32) }}
+        <div class="form-group">
+            <label for="jan">{{ form.jan.label }}</label>
+            {{ form.jan(class="form-control") }}
             {% for error in form.jan.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.feb.label }}<br>
-            {{ form.feb(size=32) }}
+        </div>
+        
+        <div class="form-group">
+            <label for="feb">{{ form.feb.label }}</label>
+            {{ form.feb(class="form-control") }}
             {% for error in form.feb.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.mar.label }}<br>
-            {{ form.mar(size=32) }}
+        </div>
+        
+        <div class="form-group">
+            <label for="mar">{{ form.mar.label }}</label>
+            {{ form.mar(class="form-control") }}
             {% for error in form.mar.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.apr.label }}<br>
-            {{ form.apr(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="apr">{{ form.apr.label }}</label>
+            {{ form.apr(class="form-control") }}
             {% for error in form.apr.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.may.label }}<br>
-            {{ form.may(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="may">{{ form.may.label }}</label>
+            {{ form.may(class="form-control") }}
             {% for error in form.may.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.jun.label }}<br>
-            {{ form.jun(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="jun">{{ form.jun.label }}</label>
+            {{ form.jun(class="form-control") }}
             {% for error in form.jun.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.jul.label }}<br>
-            {{ form.jul(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="jul">{{ form.jul.label }}</label>
+            {{ form.jul(class="form-control") }}
             {% for error in form.jul.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.aug.label }}<br>
-            {{ form.aug(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="aug">{{ form.aug.label }}</label>
+            {{ form.aug(class="form-control") }}
             {% for error in form.aug.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.sep.label }}<br>
-            {{ form.sep(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="sep">{{ form.sep.label }}</label>
+            {{ form.sep(class="form-control") }}
             {% for error in form.sep.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.oct.label }}<br>
-            {{ form.oct(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="oct">{{ form.oct.label }}</label>
+            {{ form.oct(class="form-control") }}
             {% for error in form.oct.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.nov.label }}<br>
-            {{ form.nov(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="nov">{{ form.nov.label }}</label>
+            {{ form.nov(class="form-control") }}
             {% for error in form.nov.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.dec.label }}<br>
-            {{ form.dec(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="dec">{{ form.dec.label }}</label>
+            {{ form.dec(class="form-control") }}
             {% for error in form.dec.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>
-            {{ form.annual_rainfall.label }}<br>
-            {{ form.annual_rainfall(size=32) }}
+        </div>
+
+        <div class="form-group">
+            <label for="annual_rainfall">{{ form.annual_rainfall.label }}</label>
+            {{ form.annual_rainfall(class="form-control") }}
             {% for error in form.annual_rainfall.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+                <span class="error-message">{{ error }}</span>
             {% endfor %}
-        </p>
-        <p>{{ form.submit() }}</p>
+        </div>
+
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
     </form>
+</div>
 {% endblock %}
