@@ -1,5 +1,8 @@
+# Flood Prediction Project
+Flooding is a significant issue that threatens urban areas, leading to extensive property damage, displacement of communities, and loss of lives. This project aims to develop an accurate and reliable flood prediction model using advanced data analysis and machine learning techniques.
 
-## Instructions on How to Run
+
+## Instructions on How to Run the Website
 
 - Create a virtual environment: python -m venv venv
 - Activate the virtual environment: venv/Scripts/activate
