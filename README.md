@@ -1,4 +1,3 @@
-<img width="961" alt="web dev 09" src="https://github.com/user-attachments/assets/9f108d1e-52c4-4ac8-a34e-932bb255aeb0"># flood-prediction-project
 
 ## Instructions on How to Run
 
