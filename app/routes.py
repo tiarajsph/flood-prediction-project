@@ -33,10 +33,12 @@ def prediction():
         oct = form.oct.data
         nov = form.nov.data
         dec = form.dec.data
-        annual_rainfall = form.annual_rainfall.data
+        
+        # Calculate the annual rainfall
+        monthly_rainfalls = [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+        annual_rainfall = sum(monthly_rainfalls) / 12
 
         # Create a Pandas DataFrame from the input data
-
         new_data = pd.DataFrame({
             'JAN': [jan],
             'FEB': [feb],

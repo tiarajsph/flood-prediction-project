@@ -16,6 +16,6 @@ class PredictionForm(FlaskForm):
     oct = FloatField('October', validators=[DataRequired()])
     nov = FloatField('November', validators=[DataRequired()])
     dec = FloatField('December', validators=[DataRequired()])
-    annual_rainfall = FloatField('Annual Rainfall', validators=[DataRequired()])
+#    annual_rainfall = FloatField('Annual Rainfall', validators=[DataRequired()])
 
     submit = SubmitField('Submit')
